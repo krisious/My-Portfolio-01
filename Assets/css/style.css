@@ -1,0 +1,673 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Mukta", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/*---------------------------------------
+    Typorgraphy              
+-----------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Abril Fatface", cursive;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 42px;
+  padding-bottom: 14px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 52px;
+  margin-top: 0px;
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 32px;
+  padding-bottom: 6px;
+}
+
+h4 {
+  color: black;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-top: 6px;
+}
+
+h5 {
+  color: black;
+}
+
+strong {
+  color: black;
+  font-weight: normal;
+}
+
+p {
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  font-family: "Mukta", sans-serif;
+}
+
+.section-btn {
+  background-color: transparent;
+  border: 3px solid black;
+  border-radius: 100px;
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  padding: 12px 36px;
+  margin-top: 42px;
+  transition: all 0.4s ease-in-out;
+  text-transform: uppercase;
+}
+
+.section-btn:hover {
+  background: deepskyblue;
+  border-color: transparent;
+  color: white;
+}
+
+.btn-success:focus {
+  background-color: #000;
+  border-color: transparent;
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+.section-title {
+  position: relative;
+  padding-bottom: 22px;
+}
+
+#experience,
+#education,
+#achievement,
+#contact {
+  position: relative;
+}
+
+#home .container,
+#experience .container,
+#education .container,
+#achievement .container,
+#portfolio .container,
+#blog .container,
+#contact .container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#experience .experience-thumb,
+#education .education-thumb,
+#achievement .achievement-thumb {
+  padding: 22px 42px 42px 42px;
+}
+
+#quotes,
+footer {
+  text-align: center;
+}
+
+#experience,
+#education,
+#achievement {
+  background: white;
+}
+
+.background-image {
+  background-position: 50% 50% !important;
+  background-size: cover !important;
+  width: 100%;
+  height: 100%;
+  min-height: 75vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*---------------------------------------
+    General               
+-----------------------------------------*/
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none !important;
+}
+a:hover,
+a:active,
+a:focus {
+  outline: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*---------------------------------------
+    Preloader section              
+-----------------------------------------*/
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 dodgerblue;
+}
+
+.spinner {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  position: relative;
+}
+
+.spinner:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid yellow;
+  border-top-color: white;
+  animation: spinner 0.6s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*---------------------------------------
+    Navigation section              
+-----------------------------------------*/
+
+.custom-navbar {
+  margin-bottom: 0;
+  background-color: white;
+}
+
+.custom-navbar .navbar-brand {
+  color: black;
+  text-shadow: 1px 1px whitesmoke;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+
+.custom-navbar .nav li a {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 40px;
+  transition: all 0.4s ease-in-out;
+}
+
+.custom-navbar .nav li a:hover {
+  background: transparent;
+  color: white;
+  font-size: 20px;
+}
+
+.custom-navbar .navbar-nav > li > a:hover,
+.custom-navbar .navbar-nav > li > a:focus {
+  background-color: transparent;
+}
+
+.custom-navbar .nav li.active > a {
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+}
+
+.custom-navbar .navbar-toggle {
+  border: none;
+  padding-top: 10px;
+}
+
+.custom-navbar .navbar-toggle {
+  background-color: transparent;
+}
+
+.custom-navbar .navbar-toggle .icon-bar {
+  background: deepskyblue;
+  border-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .custom-navbar {
+    padding: 12px 0;
+    border-bottom: 0;
+    background: 0 0;
+  }
+  .custom-navbar.top-nav-collapse {
+    background: deepskyblue;
+    box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+    padding: 0;
+  }
+}
+
+/*---------------------------------------
+    Home section              
+-----------------------------------------*/
+
+#home h1 {
+  padding-bottom: 18px;
+}
+
+#home .col-md-6 {
+  background: dodgerblue;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#home .home-img {
+  background: url("/Assets/images/home.JPG") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100vh;
+}
+
+#home .home-thumb {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 45px 0 45px;
+}
+
+/*---------------------------------------
+    Experience section              
+-----------------------------------------*/
+
+#experience .experience-img {
+  background: url("/Assets/images/experience.JPG") no-repeat;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+#experience .media-heading {
+  margin-bottom: 0px;
+}
+
+#experience .media .fa {
+  font-size: 42px;
+  margin-right: 14px;
+}
+
+#experience small {
+  color: gray;
+}
+
+/*---------------------------------------
+    Education section              
+-----------------------------------------*/
+
+#education {
+  background: dodgerblue;
+}
+
+#education .education-img {
+  background: url("/Assets/images/education.jpg") no-repeat;
+}
+
+#education .media-heading {
+  margin-bottom: 0px;
+}
+
+#education .media .fa {
+  font-size: 42px;
+  margin-right: 14px;
+}
+
+#education small {
+  color: white;
+}
+
+/*---------------------------------------
+    Achievement section              
+-----------------------------------------*/
+
+#achievement .achievement-img {
+  background: url("/Assets/images/achievement.jpg") no-repeat;
+  min-height: 88.9vh;
+}
+
+#achievement .media-heading {
+  margin-bottom: 0px;
+}
+
+#achievement .media .fa {
+  font-size: 42px;
+  margin-right: 14px;
+}
+
+#achievement small {
+  color: gray;
+}
+
+/*---------------------------------------
+    Portfolio Section             
+-----------------------------------------*/
+
+#portfolio .portfolio-thumb {
+  text-align: center;
+}
+
+#portfolio .portfolio-thumb h1 {
+  position: relative;
+  bottom: -40px;
+}
+
+#portfolio .column-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#portfolio .card {
+  width: 30%;
+}
+
+#portfolio .card img {
+  width: 100%;
+}
+
+#portfolio .panel {
+  padding: 5%;
+  box-shadow: 0 0 18px -8px rgba(118, 130, 183, 1);
+  border-radius: 10px;
+}
+
+/*---------------------------------------
+    Blog Section             
+-----------------------------------------*/
+
+#blog .blog-thumb {
+  text-align: center;
+}
+
+#blog .blog-thumb h1 {
+  position: relative;
+  bottom: -40px;
+}
+
+#blog .column-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#blog .card {
+  width: 30%;
+}
+
+#blog .card img {
+  width: 100%;
+}
+
+#blog .panel {
+  padding: 5%;
+  box-shadow: 0 0 18px -8px rgba(118, 130, 183, 1);
+  border-radius: 10px;
+}
+
+/*---------------------------------------
+   Quotes section              
+-----------------------------------------*/
+
+#quotes {
+  background: url("/Assets/images/quote.jpg") 50% 0 repeat-y fixed;
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+  position: relative;
+  padding: 100px 0px;
+}
+
+#quotes .overlay {
+  background: #121212;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0.7;
+}
+
+#quotes .fa {
+  font-size: 42px;
+  margin-top: 32px;
+  margin-bottom: 22px;
+}
+
+#quotes p {
+  padding-top: 32px;
+}
+
+/*---------------------------------------
+    Contact section              
+-----------------------------------------*/
+
+#contact {
+  background-color: dodgerblue;
+}
+
+#contact .section-title {
+  position: relative;
+  bottom: -30px;
+  text-align: center;
+  color: black;
+}
+
+#contact .section-title p {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.social-icon {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.social-icon li {
+  display: inline-block;
+  list-style: none;
+}
+
+.social-icon li a {
+  border: 2px solid transparent;
+  color: black;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  margin: 22px 4px 10px 4px;
+}
+
+.social-icon li a:hover {
+  background: yellow;
+  border-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+/*---------------------------------------
+   Footer section              
+-----------------------------------------*/
+
+footer {
+  padding: 10px 0px;
+  background-color: deepskyblue;
+}
+
+/*---------------------------------------
+   Mobile Responsive         
+-----------------------------------------*/
+
+@media only screen and (max-width: 580px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: inherit;
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: inherit;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .custom-navbar .navbar-brand {
+    line-height: 18px;
+  }
+
+  #home .home-thumb {
+    height: auto;
+    padding-top: 32px;
+    padding-bottom: 12px;
+  }
+
+  #home .container,
+  #experience .container,
+  #education .container,
+  #achievement .container,
+  #contact .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  #experience .col-md-6,
+  #education .col-md-6,
+  #achievement .col-md-6,
+  #contact .col-md-3 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .background-image {
+    position: relative;
+    min-height: 65vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-title {
+    padding-bottom: 12px;
+  }
+
+  footer {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .card {
+    width: 100%;
+  }
+}
